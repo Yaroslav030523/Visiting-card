@@ -1,0 +1,331 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 1% 10% 1% 10% ;
+font-family: 'comfortaa';
+  position: relative;
+  color: rgb(255, 85, 0);
+  height: 100%;
+  background-color: rgb(23, 22, 28);
+
+}
+.white{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  background: linear-gradient(to left,  #b96af1e8 10%, #54545444 50%);
+}
+main{
+  display: flex;
+  flex-wrap: wrap;
+  display : none;
+}
+nav{
+margin-top: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu{
+
+  margin-left: 5%;
+  height: 20px;
+}
+
+.styled-button{
+  font-weight: 1000;
+  cursor:pointer;
+  font-size: 30px;
+  margin-right: 5%;
+}
+/* .styled-button:hover{
+  font-size: 32px;
+
+  text-shadow: 0 0 10px rgb(255, 85, 0);
+  margin-right: 2%;
+} */
+.styled-button:active
+{
+  color: white;
+}
+.container {
+
+  width: 350px;
+  height: 350px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 100%;
+  margin-left: 100px;
+  margin-top: 240px;
+}
+
+.radius {
+  /* box-shadow: 0 0 10px #00d0ff; */
+  box-shadow:0 0 6px white;
+  border-color: white;
+  border-width: 5px;
+  width: 470px;
+  height: 470px;
+  border-style: solid;
+  border-radius: 100%;
+  margin-top: -200px;
+  margin-left: -205px;
+}
+.bol{
+  z-index: auto;
+  box-shadow:0 0 6px white;
+  border-color: white;
+  /* box-shadow: 0 0 10px #00d0ff; */
+  margin: auto;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 50%; /* Створення круглої форми рухомого блоку */
+}
+.moving-box {
+
+  animation: moveBox 8s linear infinite; /* Визначення анімації */
+  animation-delay: 0s;
+}
+.moving-box2 {
+
+  animation: moveBox 8s linear infinite; /* Визначення анімації */
+  animation-delay: 6s;
+}
+.moving-box1 {
+
+  animation: moveBox 8s linear infinite; /* Визначення анімації */
+
+  animation-delay: 4s; /* затримка щоб анімація спрацьовувала пізніше */
+}
+.moving-box3 {
+
+  animation: moveBox 8s linear infinite; /* Визначення анімації */
+
+  animation-delay: 2s; /* затримка щоб анімація спрацьовувала пізніше */
+}
+@keyframes moveBox {
+  0% {
+    transform: rotate(0deg) translateX(230px) rotate(0deg); /* rotate(0deg) -відповідає за розташування на колі на початку руху */
+  }
+  100% {
+    transform: rotate(360deg) translateX(230px) rotate(-360deg); /* rotate(360deg) -відповідає за розташування на колі в кінці першого циклу */
+  }
+}
+img{
+margin-left: 12%;
+margin-top: 10%;
+}
+.text-block{
+
+  width: 300px;
+
+}
+.none{
+  display: none;
+}
+
+.moon-container{
+  margin-top:2px;
+  margin-left: -10%;
+  margin-right: 18%;
+  cursor: pointer;
+  filter: drop-shadow(3px 2px 2px rgba(51, 187, 255, 0.7));
+}
+.info{
+  margin-top: 6%;
+}
+
+.photo{ 
+
+   z-index:100;
+ margin-top: -30px;
+ margin-left: 0px;
+}
+.containerPhoto{
+  /* box-shadow: 0 0 10px #00d0ff; */
+  box-shadow:0 0 6px white;
+  border-color: white;
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 120px;
+  overflow: hidden;
+  border-style: solid;
+  border-radius: 100%;
+  border-color: white;
+  width: 230px;
+  height: 230px;
+}
+@font-face {
+  font-family:'comfortaa';
+  src: url(./fonts/comfortaa/Comfortaa-VariableFont_wght.ttf);
+}
+.block{
+ width: 40%;
+}
+.containerBlockLR{
+  display: flex;
+  
+
+}
+.textBlock4{
+  font-size: 36px;
+  margin-top: 36%;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  /* margin-top: -20px; */
+}
+.myName{
+  font-size: 32px;
+  margin: 0px;
+  padding: 0px;
+  color: orangered;
+}
+.color{
+  color: black;
+}
+
+/* .colorUA{
+  font-weight: 1000;
+  margin: 0px;
+    background: linear-gradient(
+    to bottom, rgba(0, 168, 253), #ffff00 100%);
+      background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+   } */
+    
+    /* @keyframes gradient {
+    0% { background-position: 0% 75%; }
+    50% { background-position:100% 50%; }
+    100% { background-position: 0% 70%; }
+} */
+.name{
+
+  font-size: 44px;
+  display: flex;
+}
+.Fam{
+  font-size: 32px;
+  margin: 0px;
+  padding: 0px;
+}
+.imgBol{
+  width:"50px" 
+}
+.welcome{
+  text-align:center;
+  margin-top: 20%;
+  font-size: 6vw;
+  width: 100%;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: relative;
+}
+@keyframes shine {
+  0% {
+  background-position-x: -500%;
+  }
+  100% {
+  background-position-x: 500%;}
+}
+@media screen and (max-width: 700px) {
+  nav{
+    margin-top: -20%;
+    display: block;}
+  .styled-button{
+    margin-bottom: 3%;
+  }
+
+  .text-block{
+
+    width:100%;
+  
+  }
+  .container {
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 100%;
+    margin-left: 100px;
+    margin-top: 200px;
+  }
+  
+  .radius {
+
+    border-width: 5px;
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    border-radius: 100%;
+    margin-top: -120px;
+    margin-left: -135px;
+  }
+  .bol{
+    z-index: auto;
+
+    margin: auto;
+    position: absolute;
+
+    background-color: #ffffff;
+    border-radius: 50%; /* Створення круглої форми рухомого блоку */
+  }
+  .imgBol{
+    width:"100px" 
+  }
+  .photo{ 
+
+    z-index:100;
+  margin-top: -30px;
+  margin-left: -5px;
+  }
+  .containerPhoto{
+
+    position: absolute;
+   margin-top: 45px;
+   margin-left: 45px;
+   overflow: hidden;
+   border-style: solid;
+   border-radius: 100px;
+   border-color: white;
+ width: 200px;
+ height: 200px;
+ }
+ .textBlock4{
+  margin-top: 0px;
+}
+  @keyframes moveBox {
+    0% {
+      transform: rotate(0deg) translateX(160px) rotate(0deg); /* rotate(0deg) -відповідає за розташування на колі на початку руху */
+    }
+    100% {
+      transform: rotate(360deg) translateX(160px) rotate(-360deg); /* rotate(360deg) -відповідає за розташування на колі в кінці першого циклу */
+    }
+    
+  }
+  @media screen and (max-width: 499px) {
+    .container {
+
+      margin-left:40%;
+      margin-top: 150px;
+    }
+
+    /* nav{
+      margin-top: 1%;
+      margin-bottom: -10%;
+      }
+       */
+    .radius {
+      margin-top: -120px;
+      margin-left: -135px;
+    }
+  };}
